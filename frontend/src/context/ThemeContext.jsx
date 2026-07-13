@@ -78,7 +78,7 @@ export const themeProfiles = {
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [currentTheme, setCurrentTheme] = useState("crimsonSteel");
+  const [currentTheme, setCurrentTheme] = useState("anbGold");
   const [darkMode, setDarkMode] = useState(true);
 
   const applyTheme = (themeName, isDark) => {
