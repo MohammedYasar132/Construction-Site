@@ -13,7 +13,7 @@ export const ServiceCard = ({ icon: Icon, title, description, index }) => {
       className="bg-white dark:bg-dark-card p-8 border border-gray-100 dark:border-gray-800 relative hover:shadow-premium group transition-all duration-350"
     >
       {/* Decorative background number */}
-      <span className="absolute right-6 top-6 text-7xl font-display font-black text-gray-50 dark:text-gray-900 select-none pointer-events-none group-hover:text-primary/10 transition-colors">
+      <span className="absolute right-6 top-6 text-7xl font-display font-black text-primary/15 select-none pointer-events-none group-hover:text-primary/30 transition-colors">
         0{index + 1}
       </span>
 
