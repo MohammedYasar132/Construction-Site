@@ -77,17 +77,7 @@ const Navbar = () => {
 
           {/* Theme & Actions Settings */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-secondary dark:text-gray-300"
-              aria-label="Toggle Dark Mode"
-            >
-              {darkMode ? (
-                <Sun size={20} className="text-primary" />
-              ) : (
-                <Moon size={20} />
-              )}
-            </button>
+
 
             <button
               onClick={() => setThemePanelOpen(!themePanelOpen)}
@@ -119,16 +109,7 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center space-x-2">
-          <button
-            onClick={toggleDarkMode}
-            className="p-2 rounded-full text-secondary dark:text-gray-300"
-          >
-            {darkMode ? (
-              <Sun size={18} className="text-primary" />
-            ) : (
-              <Moon size={18} />
-            )}
-          </button>
+
 
           <button
             onClick={() => setThemePanelOpen(!themePanelOpen)}
@@ -312,22 +293,7 @@ const Navbar = () => {
                   })}
                 </div>
 
-                <div className="mt-8">
-                  <h4 className="font-display font-semibold text-sm uppercase tracking-wider text-gray-400 mb-3">
-                    Mode Settings
-                  </h4>
-                  <button
-                    onClick={toggleDarkMode}
-                    className="w-full flex items-center justify-between p-3 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/30 text-left transition-all text-secondary dark:text-gray-200 text-sm font-medium"
-                  >
-                    <div className="flex items-center space-x-3">
-                      {darkMode ? <Sun size={18} /> : <Moon size={18} />}
-                      <span>
-                        {darkMode ? "Light Theme Mode" : "Dark Theme Mode"}
-                      </span>
-                    </div>
-                  </button>
-                </div>
+
               </div>
 
               <div className="absolute bottom-6 left-6 right-6 text-center text-xs text-gray-400">

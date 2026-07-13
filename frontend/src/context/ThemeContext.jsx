@@ -100,10 +100,7 @@ export const ThemeProvider = ({ children }) => {
     } else {
       root.classList.remove("dark");
       root.style.setProperty("--color-bg", "#ffffff");
-      root.style.setProperty(
-        "--color-surface",
-        profile.variables["--color-surface"],
-      );
+      root.style.setProperty("--color-surface", "#ffffff");
       root.style.setProperty(
         "--color-text-primary",
         profile.variables["--color-text-primary"],
@@ -126,7 +123,8 @@ export const ThemeProvider = ({ children }) => {
   };
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    // Lock in Dark Mode permanently
+    setDarkMode(true);
   };
 
   return (

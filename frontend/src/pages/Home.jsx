@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { ServiceCard, ProjectCard } from "../components/UI/Card";
 import Button from "../components/UI/Button";
+import { useAppTheme } from "../context/ThemeContext";
 
 // Mock projects fallback in case backend is loading or unavailable
 const fallbackProjects = [
@@ -108,6 +109,7 @@ const heroSlides = [
 
 const Home = () => {
   const navigate = useNavigate();
+  const { theme } = useAppTheme();
   // Hero Slider State
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -326,7 +328,7 @@ const Home = () => {
       </section>
 
       {/* 3. Core Services Matrix Section */}
-      <section className="py-24 bg-surface transition-colors duration-300">
+      <section className={`py-24 transition-colors duration-300 ${theme === "anbGold" ? "bg-[#2d2d2d]" : "bg-surface"}`}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <span className="text-xl md:text-3xl uppercase tracking-widest font-black text-primary anb-border pl-3">
