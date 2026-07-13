@@ -81,3 +81,45 @@
   position: relative;
   overflow: hidden;
 }
+
+/* Custom layout fixes for mobile devices under 360px */
+@media (max-width: 359px) {
+  .navbar-mobile-header {
+    height: 4.5rem !important; /* Slightly increase height from h-16 (4rem) to 4.5rem (72px) */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .navbar-mobile-header .logo-title {
+    font-size: 0.95rem !important; /* Scale down title text size to prevent wrapping */
+    letter-spacing: -0.02em !important;
+  }
+  
+  .navbar-mobile-header .logo-tagline {
+    font-size: 7.5px !important; /* Scale down tagline */
+    letter-spacing: 0.15em !important;
+    margin-top: 0.1rem !important;
+  }
+
+  /* Ensure the content cleared by fixed header takes up the correct top padding */
+  .pt-24 {
+    padding-top: 6.5rem !important;
+  }
+  .pt-32 {
+    padding-top: 8.5rem !important;
+  }
+}
+
+/* Force light black color in Light Mode and light gray color in Dark Mode */
+.force-light-black-text {
+  color: #333333 !important;
+  font-weight: 700 !important;
+}
+
+.dark .force-light-black-text {
+  color: #e5e7eb !important;
+  font-weight: 700 !important;
+}
+
+
+

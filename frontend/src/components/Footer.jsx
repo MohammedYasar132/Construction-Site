@@ -34,7 +34,7 @@ const Linkedin = (props) => (
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-gray-400 pt-16 pb-24 md:pb-8 border-t-4 border-primary">
+    <footer className="bg-surface dark:bg-dark-card text-text-secondary dark:text-gray-400 pt-16 pb-24 md:pb-8 border-t-4 border-primary transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* About section */}
         <div className="space-y-4">
@@ -50,25 +50,25 @@ const Footer = () => {
           <div className="flex space-x-3 pt-2">
             <a
               href="#"
-              className="w-8 h-8 rounded bg-gray-800 hover:bg-primary hover:text-secondary flex items-center justify-center transition-colors text-gray-300"
+              className="w-8 h-8 rounded bg-gray-100 dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary flex items-center justify-center transition-colors text-text-primary dark:text-gray-300 hover:text-secondary dark:hover:text-secondary"
             >
               <Facebook size={16} />
             </a>
             <a
               href="#"
-              className="w-8 h-8 rounded bg-gray-800 hover:bg-primary hover:text-secondary flex items-center justify-center transition-colors text-gray-300"
+              className="w-8 h-8 rounded bg-gray-100 dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary flex items-center justify-center transition-colors text-text-primary dark:text-gray-300 hover:text-secondary dark:hover:text-secondary"
             >
               <Twitter size={16} />
             </a>
             <a
               href="#"
-              className="w-8 h-8 rounded bg-gray-800 hover:bg-primary hover:text-secondary flex items-center justify-center transition-colors text-gray-300"
+              className="w-8 h-8 rounded bg-gray-100 dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary flex items-center justify-center transition-colors text-text-primary dark:text-gray-300 hover:text-secondary dark:hover:text-secondary"
             >
               <Instagram size={16} />
             </a>
             <a
               href="#"
-              className="w-8 h-8 rounded bg-gray-800 hover:bg-primary hover:text-secondary flex items-center justify-center transition-colors text-gray-300"
+              className="w-8 h-8 rounded bg-gray-100 dark:bg-gray-800 hover:bg-primary dark:hover:bg-primary flex items-center justify-center transition-colors text-text-primary dark:text-gray-300 hover:text-secondary dark:hover:text-secondary"
             >
               <Linkedin size={16} />
             </a>
@@ -77,7 +77,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-display font-bold text-white text-sm uppercase tracking-wider mb-6 pb-2 border-b-2 border-gray-850 w-fit">
+          <h4 className="font-display font-bold text-secondary dark:text-white text-sm uppercase tracking-wider mb-6 pb-2 border-b-2 border-gray-200 dark:border-gray-800 w-fit">
             Navigation Links
           </h4>
           <ul className="space-y-3 text-sm">
@@ -123,7 +123,7 @@ const Footer = () => {
 
         {/* Services Links */}
         <div>
-          <h4 className="font-display font-bold text-white text-sm uppercase tracking-wider mb-6 pb-2 border-b-2 border-gray-850 w-fit">
+          <h4 className="font-display font-bold text-secondary dark:text-white text-sm uppercase tracking-wider mb-6 pb-2 border-b-2 border-gray-200 dark:border-gray-800 w-fit">
             Our Specialties
           </h4>
           <ul className="space-y-3 text-sm">
@@ -172,7 +172,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="space-y-4">
-          <h4 className="font-display font-bold text-white text-sm uppercase tracking-wider mb-6 pb-2 border-b-2 border-gray-850 w-fit">
+          <h4 className="font-display font-bold text-secondary dark:text-white text-sm uppercase tracking-wider mb-6 pb-2 border-b-2 border-gray-200 dark:border-gray-800 w-fit">
             Get In Touch
           </h4>
           <ul className="space-y-3 text-sm">
@@ -191,19 +191,19 @@ const Footer = () => {
           </ul>
 
           <div className="pt-2">
-            <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2">
+            <label className="block text-xs uppercase tracking-widest text-text-secondary dark:text-gray-500 mb-2">
               Subscribe to newsletter
             </label>
             <form
-              className="flex border border-gray-800 roundedoverflow-hidden"
+              className="flex border border-gray-200 dark:border-gray-800 rounded overflow-hidden"
               onSubmit={(e) => e.preventDefault()}
             >
               <input
                 type="email"
                 placeholder="Your email address"
-                className="bg-gray-900 border-none px-3 py-2 text-xs focus:ring-0 w-full text-white placeholder-gray-500 outline-none"
+                className="bg-white dark:bg-gray-900 border-none px-3 py-2 text-xs focus:ring-0 w-full text-text-primary dark:text-white placeholder-gray-500 outline-none"
               />
-              <button className="bg-primary hover:bg-primary-hover text-secondary px-3 flex items-center justify-center transition-colors">
+              <button className="bg-primary hover:bg-primary-hover text-secondary px-3 flex items-center justify-center transition-colors border-l border-gray-200 dark:border-transparent">
                 <Send size={14} />
               </button>
             </form>
@@ -211,7 +211,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+      <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-xs text-text-secondary dark:text-gray-500 transition-colors">
         <p>
           &copy; {new Date().getFullYear()} ANB Constructions. All Rights
           Reserved. Inspired by theme7x.

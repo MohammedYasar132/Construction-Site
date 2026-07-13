@@ -49,10 +49,10 @@ const ANBLogo = ({ size = 40, className = '', showText = true, textClass = '', d
       {/* Brand Text */}
       {showText && (
         <div className="flex flex-col text-left leading-none select-none">
-          <span className={`font-display font-black text-xl tracking-tight uppercase ${darkText ? 'text-secondary' : 'text-secondary dark:text-white'} ${textClass}`}>
+          <span className={`logo-title font-display font-black text-xl tracking-tight uppercase ${darkText ? 'text-secondary' : 'text-secondary dark:text-white'} ${textClass}`}>
             <span className="text-primary">ANB</span> Constructions
           </span>
-          <span className="text-[9px] tracking-[0.3em] font-extrabold text-primary uppercase mt-0.5">
+          <span className="logo-tagline text-[9px] tracking-[0.3em] font-extrabold text-primary uppercase mt-0.5">
             Engineering & Build
           </span>
         </div>

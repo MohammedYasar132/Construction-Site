@@ -324,11 +324,11 @@ const ProjectDetail = () => {
             </div>
 
             {/* Quick Action links widget */}
-            <div className="bg-secondary text-white p-8 border-l-4 border-primary space-y-4">
-              <h4 className="font-display font-bold text-white text-lg leading-tight uppercase">
+            <div className="bg-surface dark:bg-secondary text-text-primary dark:text-white p-8 border-l-4 border-primary border-t border-r border-b border-gray-150 dark:border-transparent space-y-4 transition-colors">
+              <h4 className="font-display font-bold text-secondary dark:text-white text-lg leading-tight uppercase">
                 Require a Similar Structure?
               </h4>
-              <p className="text-gray-300 text-xs leading-relaxed">
+              <p className="text-text-secondary dark:text-gray-300 text-xs leading-relaxed">
                 Connect with our design surveyors and structural engineers to prepare blueprints and load quotes.
               </p>
               <div className="pt-2">

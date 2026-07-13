@@ -241,7 +241,7 @@ const Contact = () => {
             {/* Embedded interactive Google Map placeholder matching professional site design */}
             <iframe 
               title="ANB Constructions Headquarters Map"
-              src="https://maps.google.com/maps?q=ANB%20Constructions,%20Arif%20Nagar,%20Tirupathur,%20Tamil%20Nadu,%20India&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=12.489390654806343,78.57762337746314+(ANB%20Constructions)&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               className="w-full h-full border-none outline-none grayscale dark:invert"
               allowFullScreen="" 
               loading="lazy" 

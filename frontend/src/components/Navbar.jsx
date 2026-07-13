@@ -113,7 +113,7 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Top Header (Brand & Toggles) */}
-      <header className="fixed top-0 left-0 w-full h-16 bg-white dark:bg-dark-card border-b border-gray-100 dark:border-gray-800 flex items-center justify-between px-4 z-40 md:hidden transition-colors duration-300">
+      <header className="fixed top-0 left-0 w-full h-16 bg-white dark:bg-dark-card border-b border-gray-100 dark:border-gray-800 flex items-center justify-between px-4 z-40 md:hidden transition-colors duration-300 navbar-mobile-header">
         <Link to="/" className="flex items-center">
           <ANBLogo size={32} />
         </Link>
