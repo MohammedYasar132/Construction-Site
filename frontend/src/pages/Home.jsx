@@ -219,7 +219,7 @@ const Home = () => {
   return (
     <div className="pt-16 md:pt-20">
       {/* 1. Dynamic Hero Slider Section */}
-      <section className="relative h-[85vh] w-full overflow-hidden bg-secondary">
+      <section className="relative h-[85vh] min-h-[560px] sm:min-h-[600px] md:min-h-[680px] w-full overflow-hidden bg-secondary">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -237,7 +237,7 @@ const Home = () => {
             />
 
             <div className="absolute inset-0 z-20 flex items-center">
-              <div className="max-w-7xl mx-auto px-6 w-full text-white space-y-6">
+              <div className="max-w-7xl mx-auto px-6 w-full text-white space-y-4 md:space-y-6">
                 <motion.span
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -269,7 +269,7 @@ const Home = () => {
                   initial={{ y: 30, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.9 }}
-                  className="pt-4"
+                  className="pt-2 md:pt-4"
                 >
                   <Button
                     onClick={scrollToAppointment}
@@ -287,14 +287,14 @@ const Home = () => {
         {/* Slider Controls */}
         <button
           onClick={handlePrevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-white/10 text-white hover:bg-primary hover:text-secondary rounded-full transition-colors backdrop-blur-sm"
+          className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-white/10 text-white hover:bg-primary hover:text-secondary rounded-full transition-colors backdrop-blur-sm"
           aria-label="Previous slide"
         >
           <ChevronLeft size={20} />
         </button>
         <button
           onClick={handleNextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-white/10 text-white hover:bg-primary hover:text-secondary rounded-full transition-colors backdrop-blur-sm"
+          className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-white/10 text-white hover:bg-primary hover:text-secondary rounded-full transition-colors backdrop-blur-sm"
           aria-label="Next slide"
         >
           <ChevronRight size={20} />

@@ -101,16 +101,16 @@ const About = () => {
             </p>
           </div>
 
-          <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-4 md:ml-32 space-y-12">
+          <div className="relative border-l-2 border-gray-200 dark:border-gray-800 ml-20 md:ml-32 space-y-12">
             {milestones.map((m, i) => (
-              <div key={i} className="relative pl-8 md:pl-12">
-                {/* Year tag left aligned on desktop */}
-                <div className="absolute -left-4 md:-left-32 top-0 font-display font-black text-2xl text-primary md:w-24 text-left">
+              <div key={i} className="relative pl-6 md:pl-12">
+                {/* Year tag left aligned */}
+                <div className="absolute -left-20 md:-left-32 top-0.5 md:top-0 font-display font-black text-xl md:text-2xl text-primary w-16 md:w-24 text-right md:text-left pr-2 md:pr-0">
                   {m.year}
                 </div>
                 
                 {/* Connector Dot */}
-                <div className="absolute -left-1.5 top-2 w-3 h-3 rounded-full bg-primary border-4 border-white dark:border-dark" />
+                <div className="absolute -left-1.5 top-2.5 md:top-2 w-3 h-3 rounded-full bg-primary border-4 border-white dark:border-dark" />
                 
                 <div className="space-y-2">
                   <h3 className="font-display font-bold text-secondary dark:text-white text-lg uppercase leading-tight">
